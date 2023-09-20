@@ -1,2 +1,2 @@
-Git is my tool!
-Git is my tool!
+Git is my useful tool!
+Git is my unchangable tool！
