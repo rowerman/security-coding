@@ -1,0 +1,24 @@
+{% extends "article/base.html" %}
+{% load static %}
+{% block title %}edit course{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <h1>Edit this course</h1>
+    <div class="col-md-6">
+        <form class="form-horizontal" action="." method="post">{% csrf_token %}
+            <div class="row">
+                <div class="col-md-4 text-right"><span>title：</span></div>
+                <div class="col-md-8 text-left">{{ course_form.title }}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-right"><span>Overview：</span></div>
+                <duv class="col-md-8 text-left">{{ course_form.overview }}</duv>
+            </div>
+            <div class="row">
+                <input type="submit" class="btn btn-primary btn-lg" value="Submit">
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
